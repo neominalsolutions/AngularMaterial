@@ -7,9 +7,16 @@ import { CustomersComponent } from './customers/customers.component';
 import { AngularMaterialModule } from 'src/components/angular-material/angular-material.module';
 import { FormsModule } from '@angular/forms';
 // ngModel kullanmak istiyorsak bu modülü aktif hale getirmeliyiz.
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [CrmComponent, CustomersComponent],
-  imports: [CommonModule, CrmRoutingModule, AngularMaterialModule, FormsModule],
+  imports: [
+    CommonModule,
+    CrmRoutingModule,
+    AngularMaterialModule,
+    FormsModule,
+    FlexLayoutModule,
+  ],
 })
 export class CrmModule {}
